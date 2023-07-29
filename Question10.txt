@@ -1,0 +1,11 @@
+Output::
+1
+4
+2
+3
+
+Explanation:
+Synchronous tasks are executed first, and 1 and 4 are logged to the console.
+The setTimeout with 0ms delay adds the callback with 2 to the event queue.
+The setTimeout with 100ms delay adds the callback with 3 to the event queue. 
+After the current tasks complete, 2 and 3 are logged to the console.
