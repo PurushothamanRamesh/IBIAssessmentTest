@@ -1,0 +1,9 @@
+The code will log the numbers 1, 4, 3, and 2 to the console. 
+OUTPUT : 1
+         4
+         3
+         2
+The reason for this output is:
+        The synchronous statements console.log(1) and console.log(4) are executed first, logging 1 and 4. 
+        Then, the asynchronous setTimeout with a delay of 0 adds the callback for console.log(3) to the event queue, which is executed after the synchronous statements, logging 3.
+        Lastly, the setTimeout with a delay of 1000 milliseconds adds the callback for console.log(2) to the event queue, which logs 2 after a delay of approximately 1 second.
